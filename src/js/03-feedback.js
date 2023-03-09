@@ -41,4 +41,5 @@ form.addEventListener('submit', event => {
   }
   console.log(formData);
   form.reset()
+  localStorage.clear()
 }) 
