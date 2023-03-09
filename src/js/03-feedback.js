@@ -8,7 +8,7 @@ const textArea = document.querySelector('textarea')
 function setFormInputs() {
   const raw = localStorage.getItem("feedback-form-state")
   const inputValues = JSON.parse(raw)
-  if (inputValues.email !== '' || inputValues.message !== '') {
+  if (inputValues.email !== '' && inputValues.message !== '') {
     input.value = inputValues.email
     textArea.value = inputValues.message
   }
