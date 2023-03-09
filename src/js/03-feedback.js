@@ -24,7 +24,7 @@ form.addEventListener('input', _.throttle(event => {
     message : message.value,
   }
   localStorage.setItem("feedback-form-state", JSON.stringify(formData))
-}, 0))
+}, 500))
 
 
 
